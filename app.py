@@ -48,5 +48,6 @@ for i, row in enumerate(IMAGE):
         else:
             image_transformed[int(i_out), int(j_out), :] = pixel
 
+cv2.imwrite("transformed_image", image_transformed)
 cv2.imshow("transformed image", image_transformed)
 cv2.waitKey(0)
